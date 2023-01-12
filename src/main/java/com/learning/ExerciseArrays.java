@@ -44,18 +44,18 @@ public class ExerciseArrays {
 
         System.out.println("=============Using for===================");
 
-        for(int i = 0; i < arraySize; i++){
+        for (int i = 0; i < arraySize; i++){
             System.out.println(String.format("products[%s] = %s ", i, products[i]));
         }
 
         System.out.println("=============Using foreach====================");
-        for(String product: products){
+        for (String product : products){
             System.out.println("Product: " + product);
         }
 
         System.out.println("=============Using While====================");
         int i = 0;
-        while (i < arraySize){
+        while (i < arraySize) {
             System.out.println(i + " = " + products[i]);
             i++;
         }
@@ -69,14 +69,14 @@ public class ExerciseArrays {
 
         System.out.println("=============Array Numbers====================");
 
-        int [] numbers = new int[10];
+        int[] numbers = new int[10];
 
         int numbersSize = numbers.length;
         for (int k = 0; k < numbersSize; k++){
             numbers[k] = (int) (Math.random() * 10);
         }
 
-        for(int num: numbers){
+        for (int num : numbers){
             System.out.println("Number = " + num);
         }
     }
